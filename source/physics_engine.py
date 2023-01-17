@@ -230,10 +230,10 @@ def get_frequency(distance_sequence, scale=365):
     """
     Estimates the frequency of a planet given his distance from the sun over time.
     The estimation is using Fast Fourier Transform to calculate the coefficients of the
-    discrete Fourier Sum representing the planet's function of distance from the sun over time.
-    The get_frequency function then takes the coefficient which represents with the frequency
-    with the highest amplitude to be the "base frequency" of the function and returns it
-    as the frequency of the planet.
+    discrete Fourier Sum representing the planet's distance from the sun function over time.
+    The get_frequency function then takes the coefficient which represents the frequency with
+    the highest amplitude to be the "base frequency" of the motion and returns it as the
+    frequency of the planet.
                             ^
              .......- - - - 1
           ...   |   ...     |
@@ -242,11 +242,11 @@ def get_frequency(distance_sequence, scale=365):
       .                   . |
      .          |          .|
     ----------pi/2----------.---------pi/2---------->
-                            |.         |           .
+                            |.          |          .
                             | .                   .
-                            |  .       |         .
+                            |  .        |        .
                             |   ..             ..
-                            |     ...  |    ...
+                            |     ...   |   ...
                            -1- - - - .......
 
     :param distance_sequence: dataframe containing a sequence of the distance of the planet from the sun
