@@ -26,3 +26,6 @@ and initial location, velocity and mass of each planet.
 
 ### Total energy
 ![Total energy in the Solar System over a 100-year period using 1 day time delta](/assets/total-energy-plot.png "Total energy over 100 years").
+
+### Kepler's third law (Mercury, Venus, Earth and Mars)
+![Kepler's third law as calculated from the simulation](/assets/keplers-third-law-plot.png "Kepler's third law - linear correlation").
